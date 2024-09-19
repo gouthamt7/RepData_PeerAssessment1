@@ -1,10 +1,12 @@
 ---
 title: "Reproducible Research Project1"
 output:
+  html_document: default
   github_document:
     html_preview: false
-  html_document: default
 keep_md: yes
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -80,3 +82,4 @@ ggplot(avg_steps_by_day, aes(x = interval, y = steps, color = day_type)) +
   labs(title = "Average Steps by Interval and Day Type",
        x = "5-minute Interval", y = "Average Steps")
 ```
+
